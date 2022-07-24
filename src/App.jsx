@@ -1,16 +1,14 @@
-export const App = () => {
+import UserRoutes from './UserRoutes';
+import Header from './module/Header'
+
+
+
+function App(){
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Header />
+      <UserRoutes />
+    </>
   );
 };
+export default App;
